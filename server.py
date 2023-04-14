@@ -1,10 +1,10 @@
 import socket
 import threading
-import os
+import confidential
 
 server = None
-HOST_ADDR = os.environ.get("HOST_ADDR")
-HOST_PORT = int(os.environ.get("HOST_PORT"))
+HOST_ADDR = confidential.HOST_ADDR
+HOST_PORT = confidential.HOST_PORT
 client_name = " "
 clients = []
 clients_names = []

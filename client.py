@@ -1,7 +1,7 @@
 import customtkinter
 import socket
 import threading
-import os
+import confidential
 
 window = customtkinter.CTk()
 window.title("Client")
@@ -31,8 +31,8 @@ bottomFrame.grid(row=2, column=0, padx=20, pady=(0,20))
 
 # network client
 client = None
-HOST_ADDR = os.environ.get("HOST_ADDR")
-HOST_PORT = int(os.environ.get("HOST_PORT"))
+HOST_ADDR = confidential.HOST_ADDR
+HOST_PORT = confidential.HOST_PORT
 
 def showerror(text):
     errorbox = customtkinter.CTkToplevel()
